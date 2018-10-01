@@ -258,12 +258,12 @@ figcaption {
 }
 
 .head-under-main-hero1 {
-  background-image: image-url("hero-1.jpg");
+  background-image: url("images.icons/hero-1.jpg");
   background-size: cover;
 }
 
 .head-under-main-hero3 {
-  background-image: image-url("hero-3.jpg");
+  background-image: url("images.icons/hero-3.jpg");
   background-size: cover;
 }
 
@@ -306,7 +306,7 @@ figcaption {
 }
 
 .p-icon p:before {
-  background-image: image-url('icon-logo.png');
+  background-image: url('images.icons/icon-logo.png');
   background-size: cover;
   content: '';
   display: block;
@@ -317,7 +317,7 @@ figcaption {
 }
 
 .p-icon-search h2:before {
-  background-image: image-url('icon-search.png');
+  background-image: url('images.icons/icon-search.png');
   background-size: cover;
   content: '';
   display: block;
@@ -328,7 +328,7 @@ figcaption {
 }
 
 .block-q {
-  background-image: image-url('bg-quote.jpg');
+  background-image: url('images.icons/bg-quote.jpg');
   background-size: cover;
   height: 232px;
   margin: 0px;
@@ -360,7 +360,7 @@ ul.bullets-orange-arrows {
 
 ul.bullets-orange-arrows >li:before {
   background-size: 10px;
-  content: image-url("icon-bullet-resized.png");
+  content: url(images.icons/icon-bullet-resized.png);
   text-indent: -5px;
 }
 
@@ -407,7 +407,7 @@ li span {
 }
 
 .ad-vert-img-container {
-  background-image: image-url('bg-ad-1.jpg');
+  background-image: url('images.icons/bg-ad-1.jpg');
   background-repeat: no-repeat;
   background-size: 192px;
   display: inline-block;
@@ -445,7 +445,7 @@ li span {
 }
 
 .ad-horiz-img-container {
-  background-image: image-url('bg-ad-3.png');
+  background-image: url('images.icons/bg-ad-3.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -454,7 +454,7 @@ li span {
 }
 
 .ad-horiz-img-2 {
-  background-image: image-url('bg-ad-2.png');
+  background-image: url('images.icons/bg-ad-2.png');
 }
 
 .ad-horiz-text-container {
@@ -579,7 +579,7 @@ li span {
 /*SEARCH PAGE*/
 
 .background-image-fullscreen {
-  background-image: image-url('search-bg.png');
+  background-image: url('images.icons/search-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -615,7 +615,7 @@ li span {
 }
 .search-border-top {
   background-color: transparent;
-  border-top: 1px solid rgba(77, 77, 77, .75);
+  border-top: 1px solid rgb(77, 77, 77, .75);
   margin: 0px 0px 0px 0px;
   width: 710px;
 }
@@ -645,10 +645,12 @@ li span {
 
 .search-page-label-bottom-border {
   border-bottom: 1px solid #4d4d4d;
+  margin-left: 185px
+  width: 750px;
 }
 
 .search-results-img-container {
-  background-image: image-url('article-1.png');
+  background-image: url('images.icons/article-1.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -658,11 +660,11 @@ li span {
 }
 
 .article-2 {
-  background-image: image-url('article-2.png');
+  background-image: url('images.icons/article-2.png');
 }
 
 .article-3 {
-  background-image: image-url('article-3.png');
+  background-image: url('images.icons/article-3.png');
 }
 
 .search-results-img-container button {
@@ -701,7 +703,3 @@ li span {
   margin: 0 auto;
   width: 100%;
 }
-
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
