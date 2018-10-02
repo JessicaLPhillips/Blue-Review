@@ -17,7 +17,7 @@
       <nav>
         <a href="#">Topics</a>
         <a href="#">Tags</a>
-        <%= image_tag("icon-search-header.png", style:"height: 14px", class:"head-magnify-orange;")%>
+        <%= image_tag "icon-search-header.png", {height: "14", class: "head-magnify #{'black' if @dark_theme}",}%>
       </nav>
     </header>
     <%= yield %>
