@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'tags/index'
   get 'authors/index'
   get 'posts/index'
-  get 'posts/show'
+  get 'posts/:id' to: "patients#show"
   get 'pages/search'
   get 'pages/results'
   get 'pages/home'
