@@ -4,7 +4,7 @@
           <h4>Orange Review - Edition 1</h4>
           <h1><%= @post.title %></h1>
           <h6 class="date-comments">
-            Posted 19 May 2018
+            <%= @post.created_at.strftime("Created on %m/%d/%Y")%>
             <a href="#">3 Comments</a>
           </h6>
         </div>
