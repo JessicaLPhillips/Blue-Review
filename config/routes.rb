@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'tags/index'
+  get 'authors/index'
   get 'posts/index'
   get 'posts/show'
   get 'pages/search'
