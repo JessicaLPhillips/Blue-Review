@@ -23,8 +23,8 @@
     </section>
     <section class="p">
         <div class="p-icon">
-          <p><span><%= @post.body.slice(0,5)%></span>
-          <%= @post.body.slice(6..-1) %></p>
+          <p><span><%= @post.body.split(" ").first%></span>
+          <%= @post.body.split(" ").slice(1..-1).join(" ")%></p>
 
         </div>
     </section>
