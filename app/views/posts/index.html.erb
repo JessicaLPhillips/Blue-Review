@@ -17,7 +17,9 @@
             <%= post.authors.map(& :name).to_sentence %>
           </h6>
           <h2>
+            <a class="search-results-txt" href= <%= "/posts/" + post.id.to_s %>>
             <%= post.title %>
+            </a>
           </h2>
           <div class="button-hash-container">
             <% post.tags.each do |tag| %>
