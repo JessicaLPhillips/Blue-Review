@@ -21,7 +21,7 @@
         </div>
         <div class="search-results-txt">
           <h6 class="date-comments"> 
-            <%= post.created_at %>
+            <%= post.created_at.strftime("%m/%d/%Y") %>
             <%= post.authors.first.name %>
           </h6>
           <h2>
