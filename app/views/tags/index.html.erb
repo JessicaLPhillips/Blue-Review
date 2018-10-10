@@ -1,2 +1,47 @@
-<h1>Tags#index</h1>
-<p>Find me in app/views/tags/index.html.erb</p>
+    <section class="head-under-main-hero3">
+      <div>
+        <div class="head-under-main-txt">
+          <h1>Tags Index</h1>
+      </div>
+    </section>
+    <% @tags.each_with_index do |tag, index| %>
+    <section class="search-results">
+      <div class="search-results-container-centered">
+        <div class="search-results-img-container">
+          <button class="button-opaque-lg-txt">Read More
+          </button>
+        </div>
+        <div class="search-results-txt">
+          <h6 class="date-comments"> 
+            <%= tag.created_at.strftime("%m/%d/%Y") %>
+          </h6>
+          <h2>
+            # <%= tag.name %>
+            </a>
+          </h2>
+        	<h4>
+        	 <%= tag.posts.map(& :title).to_sentence %>
+        	</h4>
+        </div>
+      </div>
+      <div class="search-break">
+      </div>
+    </section>
+      <% if (index +1) % 2 == 0%>
+      <div class="search-break">
+    </div>
+    <div class="ad-horiz-background">
+      <div class="ad-horiz-container-centered">
+        <section class="ad-horiz-img-container ad-horiz-img-2">
+          <div class="ad-horiz-text-container">
+            <p class="ad-horiz">Top Best List of Restaurants at Your Destination
+            </p>
+            <button class="button-opaque ">
+            Learn More
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+      <% end %>
+    <% end %>
