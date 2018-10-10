@@ -1,6 +1,8 @@
-<h1>INDEX OF POSTS</h1>
-<div class="entries-container">
-  <% @posts.each do |post| %>
-    <div>Title: <%= post.title%></div>
+  <% form_for(Type.Create) do |Type| %>
+    <h1>INDEX OF POSTS</h1>
+      <div class="entries-container">
+        <% @posts.each do |post| %>
+      <div>Title: <%= post.title%></div>
   <% end %>
-</div>
+  <% end %>
+    </div>
