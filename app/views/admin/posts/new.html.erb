@@ -1,0 +1,12 @@
+Post creation.
+<%= form_for @post, url: {action: "create"} do |f| %>
+  Title:<%= f.text_field :title %>
+  Body:
+  <%= f.text_area :body %>
+  <% @authors.each do |author| %>
+  Author: <%= author.name %> , id: <%= author.id %>
+  <% end %>
+  Select author by ID: <%= f.number_field :id %>
+  <br>
+ <%= f.submit "Create" %>
+<% end %>
