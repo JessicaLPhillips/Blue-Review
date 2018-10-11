@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root to: 'posts#index'
   get 'tags/index'
   get 'authors/index'
   get 'posts/index'
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
   get 'pages/home'
 
   namespace :admin do
+    root to: 'admin#index'
     resources :posts
     resources :tags
     resources :authors
