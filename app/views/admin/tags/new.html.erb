@@ -1,0 +1,6 @@
+Tag creation.
+<%= form_for @tag, url: {action: "create"} do |f| %>
+  Name:<%= f.text_field :name %>
+  <br>
+ <%= f.submit "Create" %>
+<% end %>

@@ -1,0 +1,6 @@
+Author creation.
+<%= form_for @author, url: {action: "create"} do |f| %>
+  Name:<%= f.text_field :name %>
+  <br>
+ <%= f.submit "Create" %>
+<% end %>
